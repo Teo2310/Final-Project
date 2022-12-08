@@ -27,7 +27,7 @@ p {
     width: 40px;
     height: 40px;
     font-size: 30px;
-    margin-left: 30px;
+    padding-left: 30px;
     animation-name: color;
     font-family: 'Oswald', sans-serif;
     animation-duration: 6s;
@@ -55,7 +55,7 @@ li {
 .menubar {
     display: flex;
     gap: 38px;
-    margin-right: 20px;
+    padding-right: 20px;
 
 }
 
@@ -250,15 +250,19 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-    /* text-align: start;
-    transition-duration: 2s; */
+    
 
 }
 
-/* .figure2:hover {
+.pic{
+    text-align: start;
+    transition-duration: 2s;
+}
 
+.pic:hover {
     transform: scale(2);
-} */
+    cursor: pointer;
+}
 
 .figcaption2{
     font-size: 16px;
