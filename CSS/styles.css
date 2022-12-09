@@ -156,6 +156,11 @@ li {
     border-radius: 10px;
 }
 
+.button:hover::after{
+    cursor: pointer;
+    
+}
+
 /* მარცხენა ნაწილის დასასრული */
 
 /* მარჯვენა ნაწილი */
@@ -266,9 +271,13 @@ li {
     height: 55%;
     text-align: start;
     transition-duration: 2s;
+    overflow: hidden;
+    z-index: 0;
+
 }
 
 .pic:hover {
+    
     transform: scale(2);
     cursor: pointer;
 }
@@ -299,7 +308,6 @@ li {
     margin: 0 auto 100px;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid rgb(0, 0, 0);
 }
 .images {
     width: 100%;
@@ -399,5 +407,102 @@ margin-left: 50px;
 
 /* ფუთერის დასაწყისი */
 
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #A6ADB4;
+    display: flex;
+    
+
+}
+
+.footer1 {
+    width: 50%;
+    display: flex;
+    margin:  5% 20% auto 9%;
+    gap: 7%;
+}
+
+.logo2{
+  
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+
+}
 
 
+.nav2 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    font-size: 0.81rem;
+
+
+}
+
+
+.menu{
+    color: #CBD0D3;
+    font-size: 13px;
+    margin-bottom: 10%;
+}
+
+.footericon {
+    width: 15%;
+    display: flex;
+    margin:  5%;
+    gap: 22%;
+
+}
+
+.icons{
+    color: #FFFFFF;
+    width: 16px;
+
+}
+
+
+
+
+/* ვორდ ნიუსის ფურცელი */
+
+
+.section1WN{
+        border: 2px solid red;
+        height: 500px;
+        background-color: #F6F8F9;
+        margin: 100px auto 40px auto;
+        width: 80%;
+        display: flex;
+}
+
+
+.part1{
+    border: 3px solid gray;
+    width: 50%;
+    height: 100%;
+
+}
+.imgWN1{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+
+}
+
+.title1WN{
+    color: white;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.part2WN{
+    border: 3px solid black;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+
+}
