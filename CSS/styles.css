@@ -56,8 +56,8 @@ li {
 
 .menubar {
     display: flex;
-    gap: 38px;
-    padding-right: 20px;
+    gap: 7%;
+    padding-right: 9%;
 
 }
 
@@ -164,6 +164,7 @@ li {
     width: 45%;
     height: 599px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -227,8 +228,9 @@ li {
 /* მეორე სექცია */
 
 .section2 {
-    border: 3px solid rgb(54, 54, 17);
+
     width: 80%;
+    height: 410px;
     margin: 0 auto;
 
 }
@@ -238,19 +240,19 @@ li {
     font-weight: bold;
     font-size: 1.5rem;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .box1{
     width: 100%;
+    height: 75%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    flex-wrap: nowrap;
+    gap: 3%;
 
 }
 
 .figure2{
     width: 31.2%;
-    height: 350px;
     background-color:#FFFFFF ;
     display: flex;
     flex-wrap: wrap;
@@ -260,6 +262,8 @@ li {
 }
 
 .pic{
+    width: 100%;
+    height: 55%;
     text-align: start;
     transition-duration: 2s;
 }
@@ -272,7 +276,7 @@ li {
 .figcaption2{
     font-size: 16px;
     width: 70%;
-    margin-top: 40px;
+    padding-top: 5px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
 }
@@ -292,10 +296,10 @@ li {
 
 .section3 {
     width: 80%;
-    margin: 0 auto 101px;
+    margin: 0 auto 100px;
     display: flex;
     flex-wrap: wrap;
-    border: 3px solid red;
+    border: 3px solid rgb(0, 0, 0);
 }
 .images {
     width: 100%;
@@ -310,6 +314,7 @@ li {
     width: 66%;
     display: flex;
     flex-direction: column;
+    gap: 7%;
 }
 
 
@@ -332,7 +337,6 @@ li {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 30px;
     border-radius: 6px;
 }
 
