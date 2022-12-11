@@ -20,10 +20,11 @@ h3{
 .header {
     max-width: inherit;
     width: inherit;
-    padding: 1.3% 2% 1.3% 2%;
+    height: 51px;
+    /* padding: 1.3% 2% 1.3% 2%; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #f6f8f9;
     position: fixed;
     top: 0;
@@ -33,7 +34,8 @@ h3{
     width: 40px;
     height: 40px;
     font-size: 30px;
-    padding-left: 30px;
+    padding-left: 4%;
+    padding-right: 72%;
     animation-name: color;
     font-family: 'Oswald', sans-serif;
     animation-duration: 6s;
@@ -53,18 +55,18 @@ h3{
 
 li {
     font-size: 0.68rem;
-    color: #343638;
+    color: #343638
     
 
 }
 
 nav{
-    width: 25%;
+    width: 29%;
 }
 .menubar {
     display: flex;
     gap: 10%;
-    padding-right: 9%;
+    padding-right: 3%;
 
 }
 
@@ -131,7 +133,7 @@ nav{
 
 .texts {
     width: 80%;
-    margin-top: 180px;
+    margin-top: 20%;
     color: white;
     font-family: 'Oswald', sans-serif;
 }
@@ -141,7 +143,7 @@ nav{
     border-bottom: 2px solid white;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-bottom: 40px;
+    padding-bottom: 4%;
 }
 
 
@@ -163,7 +165,7 @@ nav{
     background-color: #fa6980;
     border-color: #FA6980;
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 7%;
     border-radius: 10px;
 }
 
@@ -180,65 +182,57 @@ nav{
     width: 45%;
     height: 599px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     flex-direction: column;
     background-color: #ffffff;
-
-
 
 }
 
 .maintitle {
-    margin-top: 60px;
+    margin-top: 3%;
     width: 70%;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-bottom: 30px;
+    padding-bottom: 3%;
     color: #202124;
     border-bottom: 2px solid #EBEDED;
 
 
 }
 
-.article1{
+.articles_all{
     width: 70%;
-    height: 130px;
-
+    
 }
 
+
 .line1 {
-   margin-top: 30px;
+   margin-top: 3%;
     color: #fa6980;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     font-size: 16px;
 }
 
 .line2 {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 3%;
+    font-size: 1rem;
 }
 
 .line3 {
     color: #a6adb4;
-    width: 381px;
-    margin-bottom: 10px;
+    width: 75%;
+    margin-bottom: 3%;
 }
 
 .time{
  display: inline-block;
  font-size: 10px;
+ margin-bottom: 3%;
 
 }
 
-.articles2{
-    width: 70%;
-    height: 130px;
-    margin-top: 30px;
-}
 
 /* მარჯვენა ნაწილის დასასრული */
 
@@ -278,6 +272,15 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around; 
     
+
+}
+
+.figure2X{
+    width: 31.2%;
+    background-color:#FFFFFF ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
 
 }
 
@@ -632,3 +635,99 @@ form{
     gap: 50px;
     line-height: 1.5;
 }
+
+
+
+@media screen and (max-width: 768px){
+    
+    .logo {
+        padding-right: 37%;
+    }
+    nav{
+        width: 30%;
+    }
+
+    .section1 {
+        margin-top: 51px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .left{
+        width: 100%;
+        height: 399px;
+    }
+
+    .texts {
+        margin-top: 10%;
+        width: 80%;
+        margin-right: 10%;
+    
+    }
+
+  
+     .right {
+        width: 100%;
+        height: 343px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+
+        .maintitle{
+            width: 80%;
+            margin-top: 5%;
+            margin-right: 12%;
+
+        }
+
+
+
+        .articles_all{
+
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10%;
+    
+       
+        }
+        .article1{
+
+            width: 50%;
+        }
+        .article2{
+            width: 50%;
+        }
+
+
+
+
+        .section3{
+            width: 80%;
+        }
+
+        .figure2X{
+        content: none;
+
+    
+        }
+    
+
+
+
+
+
+        
+    
+
+        
+    }
+
+
+
+
+
