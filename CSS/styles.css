@@ -30,6 +30,10 @@ h3{
     top: 0;
 }
 
+.fa-bars{
+    display: none;
+}
+
 .logo {
     width: 40px;
     height: 40px;
@@ -123,6 +127,7 @@ nav{
     height: 599px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: start;
     background-image: url(../images/0.png);
     background-position: center;
@@ -169,7 +174,7 @@ nav{
     border-radius: 10px;
 }
 
-.button:hover::after{
+button:hover{
     cursor: pointer;
     
 }
@@ -256,6 +261,7 @@ nav{
     padding-top: 50px;
     padding-bottom: 25px;
 }
+
 .box1{
     width: 100%;
     height: 75%;
@@ -280,24 +286,33 @@ nav{
     background-color:#FFFFFF ;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 
+}
+
+.box_img0{
+    width: 100%;
+    height: 55%;
+    overflow: hidden;
+    
 }
 
 .pic{
     width: 100%;
-    height: 55%;
-    text-align: start;
-    transition-duration: 2s;
-    overflow: hidden;
-    z-index: 0;
+    height: 100%;
+    text-align: start;    
+    object-fit: cover;
+    object-position: center;
+    transition: 2s;
 
 }
+
 
 .pic:hover {
     
     transform: scale(2);
     cursor: pointer;
+    
 }
 
 .figcaption2{
@@ -317,13 +332,14 @@ nav{
 }
 
 
+
 /* მეორე სექციის დასასრული */
 
 /* მესამე სექციის დასაწყისი */
 
 .section3 {
     width: 80%;
-    margin: 0 auto 100px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -340,7 +356,7 @@ nav{
     width: 66%;
     display: flex;
     flex-direction: column;
-    gap: 7%;
+    padding-bottom: 10%;
 }
 
 
@@ -351,6 +367,7 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 30px;
     border-radius: 6px;
 
     
@@ -417,7 +434,7 @@ margin-left: 50px;
 }
 
 .figure3{
-    margin-bottom: 15%;
+    margin-bottom: 12%;
     border-radius: 6px;
 }
 
@@ -427,7 +444,9 @@ margin-left: 50px;
 /* ფუთერის დასაწყისი */
 
 footer {
+    max-width: 1440px;
     width: 100%;
+    margin: 0 auto;
     height: 200px;
     background-color: #A6ADB4;
     display: flex;
@@ -487,12 +506,14 @@ footer {
 
 /* ვორდ ნიუსის ფურცელი */
 
+
 .section1WN{
     height: 500px;
     background-color: #F6F8F9;
-    margin: 90px auto 40px auto;
+    margin: 0 auto;
     width: 80%;
     display: flex;
+    padding-top: 100px;
 }
 
 
@@ -583,6 +604,7 @@ form{
 }
 
 .avatar{
+    
     width: 33%;
     margin: 40px 40px 90px 0px;
     
@@ -595,18 +617,24 @@ form{
     font-weight: bold;
 }
 
-.avatar_text_line1{
-    width: 33%;
+.text_conteiner{
+   
+    display: flex;
+    width: 70%;
+    gap: 25%;
     padding-top: 40px;
+   padding-bottom: 80px;
+}
+
+.avatar_text_line1{
+    width: 45%;
     font-size: 14px;
     color: #A6ADB4;
     line-height: 1.5;
-    margin-bottom: 60px;
     
 }
 .avatar_text_line2{
-    width: 33%;
-    padding-top: 40px;
+    width: 45%;
     font-size: 14px;
     color: #A6ADB4;
     line-height: 1.5;
@@ -617,7 +645,7 @@ form{
 
 .section3WN{
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -642,10 +670,10 @@ form{
 @media screen and (max-width: 768px){
     
     .logo {
-        padding-right: 37%;
+        padding-right: 50%;
     }
     nav{
-        width: 30%;
+        width: 40%;
     }
 
     .section1 {
@@ -670,8 +698,10 @@ form{
 
   
      .right {
+        
         width: 100%;
         height: 343px;
+        padding-left: 42px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -681,7 +711,7 @@ form{
         .maintitle{
             width: 80%;
             margin-top: 5%;
-            margin-right: 12%;
+            margin-right: 11%;
 
         }
 
@@ -771,7 +801,379 @@ form{
 
 
 
+/* ვორდ ნიუსის გვერდი */
+
+        .section1WN{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+        }
         
+        
+        .part1{
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        
+        }
+        .imgWN1{
+            width: 100%;
+        
+        }
+        
+        .title_left_WN{
+           margin-top: -235px;
+        }
+        
+        .part2WN{
+            width: 100%;
+        
+        }
+
+
+/* მეორე სექცია ვორდ ნიუსი */
+
+        .section2WN{
+            display: flex;
+            flex-direction: column;
+            
+            
+        }
+        
+        .avatar{
+            width: 100%;
+             margin: 50px 0 30px 0;
+            
+        }
+        
+        .avatar_text{
+            width: 40%;
+
+        
+        }
+        .text_conteiner{
+            width: 100%;
+            gap: 15%;
+        }
+.avatar_text_line1{
+  
+    width: 45%; 
+}
+.avatar_text_line2{
+   
+    width: 45%;
+
+}
+
+        
+        
+        /* მესამე სექცია ვორდ ნიუსი*/
+        
+        .section3WN{
+            height: 757px;
+    
+        }
+        
+    }
+
+
+    @media screen and (max-width: 480px){
+
+        .logo {
+            padding-right: 45%;
+        }
+
+        .fa-bars{
+            display: block;
+        }
+
+        .menubar{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            flex-direction: column;
+            align-items: center;
+            left: -100%;
+
+        }
+
+        .menubar.active{
+            left: 0;
+
+        }
+
+
+
+        .texts {
+            margin-top: 5%;
+
+        }
+        
+        .title1 {
+            padding-bottom: 6%;
+        }
+        
+        
+
+        
+.right {
+    height: 478px;
+}
+
+.maintitle {
+    margin-top: 9%;
+    width: 90%;
+    padding-bottom: 9%;
+}
+
+.articles_all{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.line1 {
+    padding-top: 5px;
+     color: #fa6980;
+     font-weight: bold;
+     margin-bottom: 4%;
+     font-size: 16px;
+ }
+ 
+ .line2 {
+     margin-bottom: 3%;
+     font-size: 1rem;
+ }
+ 
+ .line3 {
+     color: #a6adb4;
+     width: 75%;
+     margin-bottom: 3%;
+ }
+ 
+ .time{
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 3%;
+ 
+ }
+
+
+
+ 
+/* მეორე სექცია */
+
+.section2 {
+
+height: 716px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+
+
+.box1{
+    width: 100%;
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    align-items: center;
+}
+.figure2{
+    height: 308px;
+    width: 100%; 
+}
+
+.figure2X{
+  display: none;
+
+}
+
+.figcaption2{
+    font-size: 18px;
+    width: 80%;
+}
+
+
+.text3{
+    width: 80%;  
+}
+
+
+/* მეორე სექციის დასასრული */
+
+/* მესამე სექციის დასაწყისი */
+
+.section3 {
+    width: 90%;
+
+}
+.maintitle2X{
+    width: 90%;
+}
+
+/* მარცხენა ნაწილი */
+
+
+.leftpart {
+    width: 100%;
+    }
+
+
+.img1{
+    width: 100%;
+    height: 300px;
+
+    
+}
+
+.img2{
+    width: 100%;
+    height: 300px;
+
+}
+
+
+.line4 {
+    color: white;
+    margin: 50px;
+ }
+
+.line5 {
+
+    margin-top: 50px;
+}
+.line6{
+
+    margin-top: 50px;
+}
+
+/* მარჯვენა მხარე */
+
+.rightpart{
+    width: 100%;
+  
+   
+}
+
+.imgnews{
+display: flex;
+flex-direction: column;
+margin-left: 0px;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+.figure3{
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+/* მესამე სექციის დასასრული */
+
+.footer1 {
+    display: none;
+}
+
+.footericon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+
+}
+
+
+
+
+
+
+/* ვორდ ნიუსის გვერდი */
+
+.section1WN{
+    width: 100%;
+    height: 714px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.part1{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+}
+.imgWN1{
+    width: 100%;
+
+}
+
+.title_left_WN{
+   margin-top: -200px;
+}
+
+.part2WN{
+    width: 100%;
+
+}
+
+
+/* მეორე სექცია ვორდ ნიუსი */
+
+.section2WN{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.avatar{
+    width: 100%;
+     margin: 50px 0 30px 0;
+    
+}
+
+.avatar_text{
+    width: 40%;
+
+
+}
+.text_conteiner{
+    width: 100%;
+    gap: 15%;
+}
+.avatar_text_line1{
+
+width: 45%; 
+}
+.avatar_text_line2{
+
+width: 45%;
+
+}
+
+
+
+/* მესამე სექცია ვორდ ნიუსი*/
+
+.section3WN{
+    height: 757px;
+
+}
+
+}
+
     }
 
 
